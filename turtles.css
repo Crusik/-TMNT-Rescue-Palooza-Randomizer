@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+header {
+    color: #fff;
+    font-size: 150%;
+    height: 7vh;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.container {
+    background: radial-gradient(rgb(5, 61, 5), rgb(8, 54, 8));
+    border-right: 2px solid white;
+    padding: 1%;
+}
+
+h1#headerStages,
+h1#headerNames {
+    color: rgb(228, 238, 228);
+    font-family: Georgia, serif;
+    font-size: 125%;
+    height: 8vh;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.button {
+    background: #1fa91f;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 1.8rem;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 70%;
+}
+
+#removeCharacterButton,
+#removeStageButton {
+    background-color: #ff0000;
+    margin-top: 1.5rem;
+}
+
+#removeCharacterButton:disabled,
+#removeStageButton:disabled,
+#stageButton:disabled,
+#characterButton:disabled {
+    background-color: rgb(150, 150, 150);
+}
+
+.stages {
+    background: radial-gradient(rgb(80, 156, 80), rgb(6, 95, 6));
+    color: rgb(228, 238, 228);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    position: relative;
+}
+
+.stage {
+    color: rgb(228, 238, 228);
+    font-size: 0.6rem;
+    margin: 0.7rem;
+    text-align: center;
+    width: 17%;
+}
+
+.stage p {
+    font-size: 1.3rem;
+    width: 200%;
+}
+
+.stage ol {
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+    width: 200%;
+}
+
+.logo {
+    margin-left: 15%;
+    width: 17%;
+}
+
+img {
+    margin-left: 40%;
+    height: 35%;
+}
+
+h2,
+h3 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+ul {
+    margin: 0 1rem;
+}
+
+li {
+    font-size: 0.9rem;
+    list-style: outside;
+    list-style: decimal;
+    margin-top: 1.2rem;
+    padding: auto;
+    text-align: left;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #fff;
+    border-color: #1fa91f;
+    color: #1fa91f;
+}
+
+#removeStageButton:hover,
+#removeCharacterButton:hover {
+    background-color: #fff;
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+#cowabunga-logo {
+    opacity: 0;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(10%, -70%);
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+}
+
+#cowabunga-logo.fadeIn {
+    opacity: 1;
+}
+
+.character {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#intro {
+    height: 80%;
+    width: 80%;
+    display: none;
+}
